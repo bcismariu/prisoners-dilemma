@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Atlantykron Prisoner's Dilemma</title>
+        <script src="Game.js"></script>
+        <script src="strategies/Tradator.js"></script>
+        <script src="strategies/Colaborator.js"></script>
+        <script src="strategies/Random.js"></script>
+        <script src="strategies/Random3.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+
+        <form>
+            Player 1:
+            <select name="player_1" id="player_1">
+                <option value="Tradator" selected="selected">Tradator</option>
+                <option value="Colaborator">Colaborator</option>
+                <option value="Random">Random</option>
+                <option value="Random3">Random3</option>
+            </select>
+            <br><br>
+            Player 2:
+            <select name="player_2" id="player_2">
+                <option value="Tradator">Tradator</option>
+                <option value="Colaborator" selected="selected">Colaborator</option>
+                <option value="Random">Random</option>
+                <option value="Random3">Random3</option>
+            </select>
+            <br><br>
+            Rounds: <input type="text" name="rounds" id="rounds" value="100">
+            <br><br>
+            <input type="button" value="Play" onclick="javascript: play();">
+
+        </form>
+        <div id="result_display">
+
+        </div>
+    </body>
+</html>
